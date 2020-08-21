@@ -1,0 +1,12 @@
+.Grid-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.Grid-cell {
+    display: flex;
+    flex-direction: column;
+    width: 45px;
+    height: 45px;
+    border: 1px solid lightblue
+}
