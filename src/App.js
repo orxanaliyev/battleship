@@ -1,10 +1,8 @@
-import React from 'react'
-import Playground from './components/Playground/Playground'
+import React from "react";
+import Playground from "./components/Playground/Playground";
 
 const App = () => {
-    return (
-        <Playground />
-    )
-}
+  return <Playground />;
+};
 
-export default App
+export default App;

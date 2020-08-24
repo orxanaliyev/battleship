@@ -1,17 +1,23 @@
-import React from 'react'
-import './Menu.css'
-import Ship from '../Ship/Ship'
+import React, { useContext } from "react";
+import Ship from "../Ship/Ship";
+import StartGame from "../StartGame/StartGame";
+import { PlayfieldContext } from "../Playground/Playground";
 
 const Menu = () => {
-    return (
-        <div className={'column'}>
-            <div className={'ui vertical buttons'}>
-                <Ship shape={'L shaped'} count={1} />
-                <Ship shape={'I shaped'} count={1} />
-                <Ship shape={'Dot shaped'} count={2} />
-            </div>
-        </div>
-    )
-}
+  const { initialShip } = useContext(PlayfieldContext);
+  const { lShape, iShape, dotShape } = initialShip;
 
-export default Menu
+  return (
+    <div className={"column"}>
+      <div className={"ui vertical buttons"}>
+        {/* <Ship {...lShape} /> */}
+        <Ship {...iShape} />
+        <Ship {...dotShape} />
+      </div>
+      <div className={"ui divider"}></div>
+      <StartGame />
+    </div>
+  );
+};
+
+export default Menu;

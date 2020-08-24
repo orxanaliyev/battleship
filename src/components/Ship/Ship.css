@@ -1,11 +1,11 @@
 .Ship-button {
-    margin-bottom: .2rem !important;
+  margin-bottom: 0.2rem !important;
 }
 
 .Ship-count {
-    background-color: white;
-    padding: .3rem;
-    color: gray;
-    border-radius: 5px;
-    margin-left: 1rem;
+  background-color: white;
+  padding: 0.3rem;
+  color: gray;
+  border-radius: 5px;
+  margin-left: 1rem;
 }
