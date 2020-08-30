@@ -72,7 +72,7 @@ const Playground = () => {
               count: oldState.lShape.count - 1,
             },
           }));
-          // setIsAllShipsReady(isAllShipsReady - 1);
+          setIsAllShipsReady(isAllShipsReady - 1);
           break;
 
         case initialShipSetup.iShape.shape:
@@ -116,7 +116,7 @@ const Playground = () => {
     setGrid((oldGrid) => {
       const newGrid = cloneDeep(oldGrid);
 
-      // if there is a ship set 2, otherwise 3
+      // if there is a ship set 2 otherwise 3
       newGrid[rowIndex][colIndex] = newGrid[rowIndex][colIndex] === 1 ? 2 : 3;
 
       return newGrid;
