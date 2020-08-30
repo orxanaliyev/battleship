@@ -1,0 +1,28 @@
+.Grid-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.Grid-cell {
+  display: flex;
+  flex-direction: column;
+  width: 45px;
+  height: 45px;
+  border: 1px solid lightblue;
+}
+
+.Empty-cell-color {
+  background-color: #e3f3ff;
+}
+
+.Ship-color {
+  background-color: #2185d0;
+}
+
+.Cell-shot-color {
+  background-color: #888888;
+}
+
+.Ship-sunk {
+  background-color: #db2828;
+}

@@ -1,9 +1,18 @@
-import React from 'react';
-import { render } from '@testing-library/react';
-import App from './App';
+import checkBundaries from "./utils/checkBundaries";
+import createGrid from "./utils/createGrid";
 
-test('renders learn react link', () => {
-  const { getByText } = render(<App />);
-  const linkElement = getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+describe("Boundaries", () => {
+  it("checkBundaries should return false", () => {
+    expect(checkBundaries([[0, 0]], 2, 3)).toBeFalsy();
+  });
+});
+
+describe("arrayContaining", () => {
+  const expected = createGrid(10, 10);
+  it("should return array with 10 rows", () => {
+    expect(expected.length).toEqual(10);
+  });
+  it("should return array with 10 colls", () => {
+    expect(expected[0].length).toEqual(10);
+  });
 });
