@@ -37,8 +37,20 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+## About Game
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+This game was created as a test project.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+When you start the game, you must first set up your initial ships (for now `"I shaped"` and `"dot shaped"`). The ships will be placed in the cells where you click, but rotation will be randomly (for `"I shape"` is vertical or horizontal). The ships do not overlap, there is at least a single cell between them. The color of the ships is blue (feel free to change colors in `Grid.css` file (ships - blue, shot cell - grey, sunken ship - red)). The installed ship's button will be disabled after select due the count of this ship.
+
+After setting up all the ships, the `Start Attack` button will be activated, when you click this button, the program will shoot at random positions (once per position). After shooting the last ship, the program will stop shooting and will be able to tell that `"The ships have sunk and the game is over!"`. The sunken ship will be red, empty shots - grey.
+
+## Config object
+
+In the `src` folder you can find `contstans.ts` file:
+
+- greetingWords{} - here you can update the title and description of the game in the header<br />
+
+- initialShipSetup{} - here you can set ship (count, label, shape, cellSize) and make sure you provide with `allShipsCount`.<br />
+
+- finalOuputMessage{} - here you can set message (ex. ships have sunk and game is over.)<br />
