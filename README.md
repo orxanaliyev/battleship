@@ -41,7 +41,7 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 
 This game was created as a test project.
 
-When you start the game, you must first set up your initial ships (for now `"I shaped"` and `"dot shaped"`). The ships will be placed in the cells where you click, but rotation will be randomly (for `"I shape"` is vertical or horizontal). The ships do not overlap, there is at least a single cell between them. The color of the ships is blue (feel free to change colors in `Grid.css` file (ships - blue, shot cell - grey, sunken ship - red)). The installed ship's button will be disabled after select due the count of this ship.
+When you start the game, you must first set up your initial ships (for now `"I shaped"` and `"dot shaped"`). The ships will be placed in the cells where you click, but rotation will be random (for `"I shape"` is vertical or horizontal). The ships do not overlap, there is at least a single cell between them. The color of the ships is blue (feel free to change colors in `Grid.css` file (ships - blue, shot cell - grey, sunken ship - red)). The installed ship's button will be disabled after select due the count of this ship.
 
 After setting up all the ships, the `Start Attack` button will be activated, when you click this button, the program will shoot at random positions (once per position). After shooting the last ship, the program will stop shooting and will be able to tell that `"The ships have sunk and the game is over!"`. The sunken ship will be red, empty shots - grey.
 
